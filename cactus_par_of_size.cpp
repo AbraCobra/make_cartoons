@@ -2,7 +2,7 @@
 //   Drawing cactus. Using function with additional parameters of size (3)
 //========================================================================
 
-# include "TXLib.h"
+#include "TXLib.h"
 
 void Cactus_drawer (int x, int y, double sizeX, double sizeY);
 
