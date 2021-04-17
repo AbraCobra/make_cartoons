@@ -1,5 +1,5 @@
 //========================================================================
-//    Cactus  starts to move. Let`s add some emotions (5)
+//    Cactus  starts to move. Let`s add some emotions (4)
 //========================================================================
 
 #include "TXLib.h"
