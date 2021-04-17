@@ -7,25 +7,20 @@
 void Cactus_drawer (int x, int y, double sizeX, double sizeY, int eyebrows_UP,
                     int eyesCRAZYleft, int eyesPUPILleft, int eyesCRAZYright, int eyesPUPILright,
                     int mouthLOWERpoint);
-
+void Cactus_moving ();
 
 int main()
     {
-    txCreateWindow (800, 800);
-    txClear();
+    txCreateWindow (1000, 1000);
 
-    Cactus_drawer (  0, 500, 0.4, 0.4,   20, 10, - 5, 15, - 5,  20);
-    Cactus_drawer (200, 500, 0.4, 0.4, - 20, 10, - 5, 15, - 5, -20);
-    Cactus_drawer (400, 500, 0.4, 0.4,   20, 10, - 5, 15, - 5, -50);
-    Cactus_drawer (600, 500, 0.4, 0.4,   20,  1,   1,  1,   1,  30);
+    Cactus_moving ();
 
     return 0;
     }
 
 
 void Cactus_drawer (int x, int y, double sizeX, double sizeY, int eyebrows_UP,
-                    int eyesCRAZYleft, int eyesPUPILleft,
-                    int eyesCRAZYright, int eyesPUPILright,
+                    int eyesCRAZYleft, int eyesPUPILleft, int eyesCRAZYright, int eyesPUPILright,
                     int mouthLOWERpoint)
     {
     txSetColor (RGB (128, 64, 64), 10);
@@ -67,4 +62,27 @@ void Cactus_drawer (int x, int y, double sizeX, double sizeY, int eyebrows_UP,
     txSetFillColor (TX_BLACK);
     txCircle (x + 167*sizeX, y - 185*sizeY, (15 -  eyesPUPILleft)*sizeX);
     txCircle (x + 282*sizeX, y - 185*sizeY, (15 - eyesPUPILright)*sizeX);
+    }
+
+void Cactus_moving ()
+    {
+    txBegin();
+
+    int t = 0;
+    while (t <= 590)
+        {
+        txClear();
+        txSetFillColor(TX_WHITE);
+        POINT fon [4] = {{0, 0}, {1000, 0}, {1000, 1000}, {0, 1000}};
+        txPolygon (fon, 4);
+
+        Cactus_drawer ( 100 + t, 500, 0.4, 0.4,   20, 10, - 5, 15, - 5,  20);
+        Cactus_drawer (-100 + t, 500, 0.4, 0.4, - 20, 10, - 5, 15, - 5, -20);
+        Cactus_drawer (-300 + t, 500, 0.4, 0.4,   20, 10, - 5, 15, - 5, -50);
+        Cactus_drawer (-500 + t, 500, 0.4, 0.4,   20,  1,   1,  1,   1,  30);
+        txSleep (100);
+        t+=10;
+        }
+
+    txEnd();
     }
