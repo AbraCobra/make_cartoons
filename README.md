@@ -221,7 +221,7 @@ int main()
 
     return 0;
     }
-
+```
 Посмотри полный код рисования 4 - х разных кактусов (или почти разных):
 [cactus_more_parametres.cpp](https://github.com/AbraCobra/make_cartoons/blob/main/cactus_more_parameters.cpp)
 
