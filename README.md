@@ -137,4 +137,10 @@ void Cactus_drawer (int x, int y, double sizeX, double sizeY)
                     {x + ROUND (157*sizeX), y + ROUND (310*sizeY)}};
     txPolygon (pot, 4);
 ```
-Здесь параметры  *double sizeX*, *double sizeY* использкуются как множители к основным координам.  Функция ROUND () 
+Здесь параметры  *double sizeX*, *double sizeY* использкуются как множители к основным координам.  Функция ROUND () округляет к ближайшему целому числу.
+
+Теперь можно посмотреть полностью код с новыми дополнительными параметрами и оценить какие возможности они дают.
+
+[cactus_par_of_size.cpp](https://github.com/AbraCobra/make_cartoons/blob/main/cactus_par_of_size.cpp)
+
+![Любой размер!](https://github.com/AbraCobra/make_cartoons/blob/main/Pictures/Cactus_prog3.png)
