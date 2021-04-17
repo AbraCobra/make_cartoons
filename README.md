@@ -76,7 +76,7 @@ void Cactus_drawer (int x, int y)
     txPolygon (pot, 4);
 ```
 
-Кроме того, в связи с тем что мы начинаем использовать функцию, структура кода тоже меняет свой вид (рисуем кактус в точке
+Кроме того, в связи с тем, что мы начинаем использовать функцию, структура кода тоже меняет свой вид (рисуем кактус в точке
 (30,  500)):
 
 ```C++
@@ -103,3 +103,9 @@ void Cactus_drawer (int x, int y)
     .
     }
 ```
+
+Полный код: [https://github.com/AbraCobra/make_cartoons/blob/main/cactus_parameters.cpp]
+
+Теперь мы можем рисовать наш объект в любой точке холста!
+
+![Кактус с параметрами] (https://github.com/AbraCobra/make_cartoons/blob/main/Pictures/Cactus_prog2.png)
