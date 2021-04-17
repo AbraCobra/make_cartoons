@@ -104,8 +104,8 @@ void Cactus_drawer (int x, int y)
     }
 ```
 
-Полный код: [https://github.com/AbraCobra/make_cartoons/blob/main/cactus_parameters.cpp]
+[]Полный код: ](https://github.com/AbraCobra/make_cartoons/blob/main/cactus_parameters.cpp)
 
 Теперь мы можем рисовать наш объект в любой точке холста!
 
-![Кактус с параметрами] (https://github.com/AbraCobra/make_cartoons/blob/main/Pictures/Cactus_prog2.png)
+![Кактус с параметрами](https://github.com/AbraCobra/make_cartoons/blob/main/Pictures/Cactus_prog2.png)
