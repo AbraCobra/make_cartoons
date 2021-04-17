@@ -1,8 +1,9 @@
 //========================================================================
-//    Cactus  starts to move. Using iteration (4)
+//    Cactus  starts to move. Using iteration (6)
 //========================================================================
 
 # include "TXLib.h"
+
 void Cactus_drawer (int x, int y, double sizeX, double sizeY);
 void Cactus_moving ();
 int main()
